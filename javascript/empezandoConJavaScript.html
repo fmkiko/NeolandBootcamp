@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        /*Ejercicio para crear variables
+        let name = "Elena";
+        let surname = "Rocha Vinssac";
+        let age = 26;
+        let alive = true;
+        const eyeColor = "marrón";
+        const birthPlace = "Santander";
+        let siblings = 0;
+        let hobbies = null;*/
+
+        /*Ejercicio para mostrar el tipo de la variable
+        console.log ("la variable name es de tipo", typeof name)
+        console.log ("la variable surname es de tipo", typeof surname)
+        console.log ("la variable age es de tipo", typeof age)
+        console.log ("la variable alive es de tipo", typeof alive)
+        console.log ("la variable eyeColor es de tipo", typeof eyeColor)
+        console.log ("la variable birthPlace es de tipo", typeof birthPlace)
+        console.log ("la variable siblings es de tipo", typeof siblings)
+        console.log ("la variable hobbies es de tipo", typeof hobbies)*/
+
+        /*Ejercicio de "vidente"
+        let job = "Asesina a sueldo";
+        let place = "La URSS";
+        let childNum = 17;
+        let partner = "Horse Luis";
+
+        const message = "Serás un/a " + job + " en " + place + " y tendrás " + childNum + " hijos con " + partner;
+
+        console.log (message)*/
+
+        /*vidente de verdad
+        let job = prompt("¿Cuál es el trabajo de tus sueños?");
+        let place = prompt("¿Dónde te gustaría vivir?");
+        let childNum = prompt("¿Cuántos hijos quieres tener?");
+        let partner = prompt("¿Cómo se llama la persona que amas?");
+
+        const message = "Serás un/a " + job + " en " + place + " y tendrás " + childNum + " hijos con " + partner;
+
+        console.log (message)*/
+
+        //Ejercicio "portero de discoteca"
+        let name = prompt("¿Cómo te llamas?");
+        let age = prompt("¿Cuántos años tienes?");
+        let shoes = prompt("¿Llevas zapatos? Escribe sí o no")
+        let letraA = name.search("a")
+
+        if(letraA >= 0 && age >= 18 && shoes === "sí"){
+            alert("¡Pa dentro " + name + "!");
+        }else if(letraA < 0 || age < 18 || shoes == "no"){
+            alert("No puedes pasar " + name);
+        }else{
+            alert("No te he entendido bien");
+        }
+
+
+        /*Calculador de edad
+        let birthYear = prompt("Nací en el año...");
+        let ageYear = prompt("¿Cuántos años tendré en...?");
+        let age1 = ageYear - birthYear;
+        let age2 = age1 - 1;
+
+        alert("En el año " + ageYear + " tendrás " + age2 + " o " + age1 + " años ");*/
+
+        /*Calculador cafés vitales
+        let name = prompt("¿Cómo te llamas?")
+        let age = prompt("¿Cuántos años tienes?")
+        let death = prompt("¿Hasta qué edad crees que vivirás?")
+        let caffees = prompt("¿Cuántos cafés tomas al día?")
+
+        let years = death - age
+        let caffeeNumber = years * caffees
+        
+        alert("¡Oye " + name + " !" + " Te quedan " + caffeeNumber + " cafés por tomar en tu vida")*/
+    </script>
+</body>
+</html>

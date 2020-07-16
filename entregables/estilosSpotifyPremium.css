@@ -1,0 +1,312 @@
+/*Fuentes
+@font-face{
+    font-family: ;
+    src: url();
+}
+https://sp-bootstrap.spotifycdn.com/8.12.5/fonts/circular-black.woff2
+https://sp-bootstrap.spotifycdn.com/8.12.5/fonts/circular-bold.woff2
+https://sp-bootstrap.spotifycdn.com/8.12.5/fonts/circular-book.woff2*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-entero{
+    display: inline-block;
+    font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 20px;
+}
+.menu-principal{
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.elemento-menu-principal{
+    display: inline-block;
+    padding: 28px 17px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: inherit;
+    letter-spacing: 0;
+}
+.elemento-menu-principal a:hover{
+    cursor: pointer;
+}
+.valla{
+    background: rgb(80, 155, 245) url(https://campaigns-test.scdn.co/images/premium_dancer.png) right bottom / 450px no-repeat;
+    color: white;
+    width: 100%;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 35px 15px;
+}
+h1{
+    font-family: inherit;
+    font-size: 60px;
+    color: inherit;
+}
+.parrafo-cabecera{
+    font-family: inherit;
+    font-size: 30px;
+    color: inherit; 
+}
+.image-ventajas{
+    display: inline-block;
+    margin-right: 20px;
+    width: 142px;
+    height: 142px;
+    background-position: center top;
+}
+.boton-planes{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: rgb(29, 185, 84);
+    color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 500px;
+    padding: 17px 48px;
+    width: 15%;
+}
+.boton-planes a:hover{
+    cursor: pointer;
+}
+.terminos-y-condiciones{
+    color: rgb(145, 148, 150);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin: .5em 0 1em;
+}
+.valla .terminos-y-condiciones{
+    font-size: 12px;
+    width: 100%;
+    color: white;
+}
+a{
+    color: rgb(145, 148, 150);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin: .5em 0 1em;
+}
+.valla a{
+    font-size: 12px;
+    width: 100%;
+    color: white;
+}
+a a:hover{
+    cursor: pointer;
+}
+.ventajas{
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 75px 15px;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+.pasate{
+    font-family: inherit;
+    font-size: 48px;
+    color: inherit;
+    display: inline;
+    display: flex;
+    text-align: center;
+}
+.ventaja{
+    display: inline-block;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222326;
+}
+.mes-gratis{
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 900;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    background-color: rgb(46, 119, 208);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+.plan{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0px 0px 5px;
+}
+.precio{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0px 0px 2px;
+}
+.cuantos{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0px 0px 2px;
+}
+.tarifas{
+    padding-top: 75px 15px;
+}
+.elige{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.28px;
+    line-height: 1;
+    text-align: center;
+    margin: 0px;
+}
+.sin-limites{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0px;
+    line-height: 1.4;
+    font-family: inherit;
+    color: inherit;
+
+}
+.tarifa{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 400px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: rgb(255, 255, 255) 0px 8px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+    border-radius: 10px 10px 0px 0px;
+    flex-flow: column nowrap;
+}
+.empezar{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(29, 185, 84);
+    color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 500px;
+    padding: 17px 48px;
+    width: 300px;
+}
+.empezar a:hover{
+    cursor: pointer;
+}
+.condiciones{
+    background-color: rgb(255, 255, 255);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 400px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    margin-top: 0px;
+    list-style: none;
+}
+.condiciones li:before{
+    content: "✓";
+}
+footer{
+    background-color: black;
+    padding: 30px 0 20px;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #919496;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.menu-footer{
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+}
+.elemento-menu-footer{
+    padding: 1em;
+    margin: 0px;
+    background-color: transparent;
+}
+.elemento-menu-footer a:hover{
+    cursor: pointer;
+}
+.idioma{
+    display: flex;
+    justify-content:flex-end;
+}
+.marca{
+    display: flex;
+    justify-content:flex-end;
+}
+.bandera{
+    width: 30px;
+    height: 20px;
+}

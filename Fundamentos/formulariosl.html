@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario inscripción</title>
+    </head>
+    <body>
+        <form action="http://www.google.com" method="post">
+            <label>Usuario:</label>
+                <input type="email" name="usuario" required="required" autofocus/>
+            <br>
+            <label>Contraseña:</label>
+                <input type="password" name="contraseña" required="required"/>
+            <br>
+            <label>Nombre:</label>
+                <input type="text" name="nombre" required="required" placeholder="escriba su nombre"/>
+            <br>
+            <label>Fecha de nacimiento:</label>
+                <input type="date" name="fecha de nacimiento" autocomplete="off"/>
+            <br>
+            <input type="file" name="foto"/>
+            <br>
+            <label>Actividades</label>
+            <br>
+            <label>Musculación</label>
+            <input type="checkbox" name="actividades" value="musculación">
+            <br>
+            <label>Piscina</label>
+            <input type="checkbox" name="actividades" value="piscina">
+            <br>
+            <label>Clases</label>
+            <input type="checkbox" name="actividades" value="clases">
+            <br>
+            <input type="submit" value="enviar">
+        </form>
+    </body>
+</html>

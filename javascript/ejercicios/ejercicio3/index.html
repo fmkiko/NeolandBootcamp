@@ -14,16 +14,25 @@
         <div class="corner" id="left-corner">
             <table class="fighter" id="fighter-left">
                 <tr class= "spot" id="spot-left">
-                    <td class="caracteristics" id="caracteristics-left"></td>
-                    <td class="photo" id="photo-left"></td>
+                    <td class="caracteristics" id="caracteristics-left">
+                        <textarea class="choose-yours" id="choose-your-fighter" placeholder="Elige entre los 4 starters"></textarea>
+                        <button class="btn1" onclick=chooseFighter()>Te elijo a ti</button>
+                        <textarea class="info" id="info-fighter">Características:</textarea>
+                    </td>
+                    <td class="photo" id="photo-left">falta la foto
+                    </td>
                 </tr>
             </table>
         </div>
         <div class="corner" id="right-corner">
             <table class="fighter" id="fighter-right">
                 <tr class="spot" id="spot-right">
-                    <td class="caracteristics" id="caracteristics-right"></td>
-                    <td class="photo" id="photo-right"></td>
+                    <td class="photo" id="photo-right">falta la foto</td>
+                    <td class="caracteristics" id="caracteristics-right">
+                    <textarea class="choose-yours" id="choose-your-rival" placeholder="Contra qué starter pelearás?"></textarea>
+                    <button class="btn1" onclick=chooseRival()>Te elijo a ti</button>
+                    <textarea class="info" id="info-rival">Características:</textarea>
+                    </td>
                 </tr>
             </table>
         </div>

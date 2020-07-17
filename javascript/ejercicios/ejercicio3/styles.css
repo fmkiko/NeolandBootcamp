@@ -20,9 +20,9 @@
     height: 150px;
 }
 .main-content{
-    background-color: transparent;
-    background-image: url ("recursos/fondo-pokeball.jpg");
-    background-repeat: no-repeat;
+    /*background-color: transparent;
+    background-image: url ("./recursos/fondo-pokeball.jpg");
+    background-repeat: no-repeat;*/
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -57,6 +57,29 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
+}
+#choose-your-fighter{
+    display: flex;
+    justify-items: flex-start;
+}
+#info-fighter{
+    display: flex;
+    justify-items: flex-start;
+}
+#choose-your-rival{
+    display: flex;
+    justify-items: flex-start;
+}
+#info-rival{
+    display: flex;
+    justify-items: flex-start;
+}
+.btn1{
+    background-color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 3px;
 }
 .btn{
     background-color: goldenrod;

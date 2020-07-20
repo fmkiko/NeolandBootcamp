@@ -11,33 +11,33 @@
         <h1 class="main-title">Pokecombat</h1>
     </header>
     <main class="main-content">
-        <div class="corner" id="left-corner">
-            <table class="fighter" id="fighter-left">
-                <tr class= "spot" id="spot-left">
-                    <td class="caracteristics" id="caracteristics-left">
+        <div class="corner" id="fighter-corner">
+            <table class="contendant" id="fighter-contendant">
+                <tr class= "spot" id="fighter-spot">
+                    <td class="caracteristics" id="caracteristics-fighter">
                         <textarea class="choose-yours" id="choose-your-fighter" placeholder="Elige entre los 4 starters"></textarea>
-                        <button class="btn1" onclick=chooseFighter()>Te elijo a ti</button>
+                        <button class="btn1" id="button-fighter" onclick=chooseFighter()>Te elijo a ti</button>
                         <textarea class="info" id="info-fighter">Características:</textarea>
                     </td>
-                    <td class="photo" id="photo-left">falta la foto
+                    <td class="photo" id="photo-fighter">?<br>Pokemon
                     </td>
                 </tr>
             </table>
         </div>
-        <div class="corner" id="right-corner">
-            <table class="fighter" id="fighter-right">
-                <tr class="spot" id="spot-right">
-                    <td class="photo" id="photo-right">falta la foto</td>
-                    <td class="caracteristics" id="caracteristics-right">
+        <div class="corner" id="rival-corner">
+            <table class="contendant" id="rival-contendant">
+                <tr class="spot" id="rival-spot">
+                    <td class="photo" id="photo-rival">?<br>Pokemon</td>
+                    <td class="caracteristics" id="caracteristics-rival">
                     <textarea class="choose-yours" id="choose-your-rival" placeholder="Contra qué starter pelearás?"></textarea>
-                    <button class="btn1" onclick=chooseRival()>Te elijo a ti</button>
+                    <button class="btn1" id="button-rival" onclick=chooseRival()>Te elijo a ti</button>
                     <textarea class="info" id="info-rival">Características:</textarea>
                     </td>
                 </tr>
             </table>
         </div>
         <div class="action-button">
-            <p class="explanation">Compara fuerzas entre Pikachu,<br>Squirtle, Bulbasur y Charmander</p>
+            <p class="explanation">Compara fuerzas entre Pikachu, Squirtle, Bulbasur y Charmander</p>
             <button class="btn" onclick="fight()">Lucha!!!</button>
         </div>
     </main>

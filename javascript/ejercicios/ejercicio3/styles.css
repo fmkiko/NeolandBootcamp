@@ -27,24 +27,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "left butn right";
+    grid-template-areas: "fighter butn rival";
     height: 300px;
 }
 .main-footer{
     grid-area: footer;
     background-color: black;
     height: 100px;
-}
-#left-corner{
-    grid-area: left;
-}
-#right-corner{
-    grid-area: right;
-}
-.action-button{
-    grid-area: butn;
-    align-content: center;
-    justify-content: center;
 }
 .main-title{
     font-family: Pokemon solid;
@@ -53,24 +42,19 @@
     font-weight: lighter;
     text-align: center;
 }
-.explanation{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
+.corner{
+    
 }
-#choose-your-fighter{
-    display: flex;
-    justify-items: flex-start;
+.contendant{
+    
 }
-#info-fighter{
-    display: flex;
-    justify-items: flex-start;
+.spot{
+    
 }
-#choose-your-rival{
-    display: flex;
-    justify-items: flex-start;
+.caracteristics{
+    padding: 10px;
 }
-#info-rival{
+.choose-yours{
     display: flex;
     justify-items: flex-start;
 }
@@ -81,6 +65,30 @@
     border-radius: 8px;
     padding: 3px;
 }
+.info{
+    display: flex;
+    justify-items: flex-start;
+}
+.photo{
+    font-family: Pokemon solid;
+    font-size: 30px;
+    border: black 2px solid;
+    padding: 10px;
+    text-align: center;
+}
+.action-button{
+    grid-area: butn;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.explanation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
 .btn{
     background-color: goldenrod;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,4 +98,60 @@
 }
 .copyright{
     color: goldenrod;
+}
+.minor-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.new-caracteristics{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#fighter-corner{
+    grid-area: fighter;
+}
+#rival-corner{
+    grid-area: rival;
+}
+#fighter-contendant{
+
+}
+#rival-contendant{
+
+}
+#fighter-spot{
+
+}
+#rival-spot{
+
+}
+#caracteristics-fighter{
+
+}
+#caracteristics-rival{
+
+}
+#choose-your-fighter{
+    
+}
+#choose-your-rival{
+
+}
+#button-fighter{
+
+}
+#button-fighter{
+    
+}
+#info-fighter{
+    
+}
+#info-rival{
+    
+}
+#photo-fighter{
+
+}
+#photo-rival{
+
 }

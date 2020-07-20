@@ -44,5 +44,4 @@ function nivelar(){
     if(letras !== -1 && numeros !== -1 && mayusculas !== -1 && longitud > 15){
         cambiarColor("green");
     };
-
 };

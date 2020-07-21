@@ -1,0 +1,123 @@
+@font-face{
+    font-family: Pokemon solid;
+    src: url(recursos/PokemonSolid.ttf);
+}
+    *{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+.main-header{
+    grid-area: header;
+    background-color: black;
+    height: 150px;
+}
+.main-content{
+    /*background-color: transparent;
+    background-image: url ("./recursos/fondo-pokeball.jpg");
+    background-repeat: no-repeat;*/
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fighter butn rival";
+    height: 300px;
+}
+.main-footer{
+    grid-area: footer;
+    background-color: black;
+    height: 100px;
+}
+.main-title{
+    font-family: Pokemon solid;
+    color: goldenrod;
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center;
+}
+/*.corner{}*/
+/*.contendant{}*/
+/*.spot{}*/
+.caracteristics{
+    padding: 10px;
+}
+.choose-yours{
+    display: flex;
+    justify-items: flex-start;
+}
+.btn1{
+    background-color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 3px;
+}
+.info{
+    display: flex;
+    justify-items: flex-start;
+}
+.photo{
+    font-family: Pokemon solid;
+    font-size: 30px;
+    border: black 2px solid;
+    padding: 10px;
+    text-align: center;
+}
+.action-button{
+    grid-area: butn;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.explanation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    background-color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.copyright{
+    color: goldenrod;
+}
+.minor-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.new-caracteristics{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#fighter-corner{
+    grid-area: fighter;
+}
+#rival-corner{
+    grid-area: rival;
+}
+/*#fighter-contendant{}*/
+/*#rival-contendant{}*/
+/*#fighter-spot{}*/
+/*#rival-spot{}*/
+/*#caracteristics-fighter{}*/
+/*#caracteristics-rival{}*/
+/*#choose-your-fighter{}*/
+/*#choose-your-rival{}*/
+/*#button-fighter{}*/
+/*#button-fighter{}*/
+/*#info-fighter{}*/
+/*#info-rival{}*/
+/*#photo-fighter{}*/
+/*#photo-rival{}*/

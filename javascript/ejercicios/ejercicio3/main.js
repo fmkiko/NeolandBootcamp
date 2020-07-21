@@ -52,30 +52,42 @@ class TipoFuego extends Pokemon{
     };
 };
 
-function chooseFighter (){
-    let pokemonNombreF = document.getElementById("choose-your-fighter").value;
+function createFighter(pokemon1){
+    document.getElementById("caracteristics-fighter").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon1.name}<br>Vida: ${pokemon1.life}<br>Ataque: ${pokemon1.attack}<br>Defensa: ${pokemon1.defense}</p></div>`
+};
 
-    let myPokemonF = pokemonNombreF.toLowerCase();
+function createRival(pokemon2){
+    document.getElementById("caracteristics-rival").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon2.name}<br>Vida: ${pokemon2.life}<br>Ataque: ${pokemon2.attack}<br>Defensa: ${pokemon2.defense}</p></div>`
+};
+
+function chooseFighter (){
+    let pokemonNameF = document.getElementById("choose-your-fighter").value;
+
+    let myPokemonF = pokemonNameF.toLowerCase();
 
 
     if(myPokemonF === "pikachu"){
-        let pokemon1 = new TipoElectrico(pokemonNombre);
-        document.getElementById("caracteristics-fighter").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon1.name}<br>Vida: ${pokemon1.life}<br>Ataque: ${pokemon1.attack}<br>Defensa: ${pokemon1.defense}</p></div>`
+        let pokemon1 = new TipoElectrico(pokemonNameF);
+        createFighter(pokemon1);
+        return pokemon1;
     };
 
     if(myPokemonF === "squirtle"){
-        let pokemon1 = new TipoAgua;
-        document.getElementById("caracteristics-fighter").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon1.name}<br>Vida: ${pokemon1.life}<br>Ataque: ${pokemon1.attack}<br>Defensa: ${pokemon1.defense}</p></div>`
+        let pokemon1 = new TipoAgua(pokemonNameF);
+        createFighter(pokemon1);
+        return pokemon1;
     };
 
-    if(myPokemonF === "bulbausr"){
-        let pokemon1 = new TipoPlanta;
-        document.getElementById("caracteristics-fighter").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon1.name}<br>Vida: ${pokemon1.life}<br>Ataque: ${pokemon1.attack}<br>Defensa: ${pokemon1.defense}</p></div>`
+    if(myPokemonF === "bulbasur"){
+        let pokemon1 = new TipoPlanta(pokemonNameF);
+        createFighter(pokemon1);
+        return pokemon1;
     };
 
     if(myPokemonF === "charmander"){
-        let pokemon1 = new TipoFuego;
-        document.getElementById("caracteristics-fighter").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon1.name}<br>Vida: ${pokemon1.life}<br>Ataque: ${pokemon1.attack}<br>Defensa: ${pokemon1.defense}</p></div>`
+        let pokemon1 = new TipoFuego(pokemonNameF);
+        createFighter(pokemon1);
+        return pokemon1;
     };
     
 };
@@ -86,39 +98,53 @@ function chooseRival (){
     let myPokemonR = pokemonNameR.toLowerCase();
 
     if(myPokemonR === "pikachu"){
-        let pokemon2 = new TipoElectrico;
-        document.getElementById("caracteristics-rival").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon2.name}<br>Vida: ${pokemon2.life}<br>Ataque: ${pokemon2.attack}<br>Defensa: ${pokemon2.defense}</p></div>`
+        let pokemon2 = new TipoElectrico(pokemonNameR);
+        createRival(pokemon2);
+        return pokemon2;
     };
 
     if(myPokemonR === "squirtle"){
-        let pokemon2 = new TipoAgua;
-        document.getElementById("caracteristics-rival").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon2.name}<br>Vida: ${pokemon2.life}<br>Ataque: ${pokemon2.attack}<br>Defensa: ${pokemon2.defense}</p></div>`
+        let pokemon2 = new TipoAgua(pokemonNameR);
+        createRival(pokemon2);
+        return pokemon2;
     };
 
-    if(myPokemonR === "bulbausr"){
-        let pokemon2 = new TipoPlanta;
-        document.getElementById("caracteristics-rival").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon2.name}<br>Vida: ${pokemon2.life}<br>Ataque: ${pokemon2.attack}<br>Defensa: ${pokemon2.defense}</p></div>`
+    if(myPokemonR === "bulbasur"){
+        let pokemon2 = new TipoPlanta(pokemonNameR);
+        createRival(pokemon2);
+        return pokemon2;
     };
 
     if(myPokemonR === "charmander"){
-        let pokemon2 = new TipoFuego;
-        document.getElementById("caracteristics-rival").innerHTML = `<div><h2 class="minor-title">Características:</h2><p class="new-caracteristics">Nombre: ${pokemon2.name}<br>Vida: ${pokemon2.life}<br>Ataque: ${pokemon2.attack}<br>Defensa: ${pokemon2.defense}</p></div>`
+        let pokemon2 = new TipoFuego(pokemonNameR);
+        createRival(pokemon2);
+        return pokemon2;
     };
     
 };
 
-let turn = Math.floor(Math.random()*10);
 
-let hit = pokemon2.attack - pokemon1.defense;
+function ranNumber(){
+    return Math.floor((Math.random()*10)+1);
+};
+
+function hit(){
+    return pokemon2.attack - pokemon1.defense;
+};
 
 function reciveAtatack (){
-    if(turn < 10){
-        let damage = pokemon1.life - hit;
+    
+    let turno = ranNumber();
+
+    console.log(typeof pokemon1);
+    
+    if(turno < 10){
+        let damage = pokemon1.life - hit();
         return damage
     };
 };
 
-/*function showWinner(){
+function showWinner(){
     let wings = document.querySelector(".corner");
 
     let center = document.querySelector(".explanation");
@@ -136,10 +162,11 @@ function reciveAtatack (){
 
     boton.style.display = "none";
     
-    center.innerHTML = "Ha ganado ${winner}";
-};*/
+    center.innerHTML = `Ha ganado ${winner}`;
+};
 
-function combat (){
+function fight (){
+
     do{
         reciveAtatack();
     }while(damage <= 0);
